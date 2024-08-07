@@ -4,6 +4,7 @@ if [ -e /usr/share/X11/xorg.conf.d/20-intel.conf ]
 then
   echo "Start configuration"
 
+  xrandr --addmode VIRTUAL1 1366x768
   xrandr --addmode VIRTUAL1 $screen1
   sleep 3s
   echo "add resolution $screen1"
